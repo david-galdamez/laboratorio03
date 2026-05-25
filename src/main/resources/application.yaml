@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: laboratorio03
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Specimen
+    username: postgres
+    password: analissa
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update

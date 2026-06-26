@@ -1,11 +1,16 @@
 spring:
   application:
-    name: laboratorio03
+    name: SPRING_APPLICATION_NAME
+
   datasource:
-    url: jdbc:postgresql://localhost:5432/Specimen
-    username: postgres
-    password: analissa
-    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+
   jpa:
+    show-sql: ${SPRING_JPA_SHOW_SQL}
     hibernate:
-      ddl-auto: update
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL}
+    properties:
+      hibernate:
+        dialect: ${SPRING_JPA_HIBERNATE_DIALECT}

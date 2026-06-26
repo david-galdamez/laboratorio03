@@ -1,0 +1,2 @@
+org.springframework.context.ApplicationContextInitializer=\
+com.laboratorio.laboratorio03.config.DotenvInitializer
